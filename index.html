@@ -7,58 +7,93 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
         }
-        h1 {
-            color: #0073e6;
+        .header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
         }
-        ul {
+        .header h1 {
+            margin: 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content p {
+            margin: 10px 0;
+        }
+        .content ul {
             list-style: none;
             padding: 0;
-        }
-        li {
-            margin: 10px 0;
-            padding: 10px;
-            background: #0073e6;
-            color: white;
-            border-radius: 5px;
-        }
-        .cta {
-            text-align: center;
             margin: 20px 0;
         }
-        .cta a {
-            text-decoration: none;
-            color: white;
+        .content ul li {
             background: #0073e6;
-            padding: 10px 20px;
+            color: white;
+            padding: 10px;
+            margin: 5px 0;
             border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .content ul li span {
+            margin-left: 10px;
+        }
+        .cta {
+            background: #28a745;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+        }
+        .cta:hover {
+            background: #218838;
+        }
+        .footer {
+            background: #f1f1f1;
+            padding: 10px;
+        }
+        .footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Empower Your Startup with Infrastructure as Code – Free Onboarding!</h1>
-        <p>Transform Your Infrastructure for Growth and Scalability</p>
-        <ul>
-            <li>🚀 <strong>Free Consultation:</strong> Understand your current infrastructure and pain points.</li>
-            <li>📈 <strong>Tailored Plan:</strong> Customized IaC implementation plan for your needs.</li>
-            <li>👩‍💻 <strong>Hands-On Sessions:</strong> Practical guidance to set up your infrastructure.</li>
-            <li>📚 <strong>Comprehensive Resources:</strong> Documentation and ongoing support.</li>
-        </ul>
-        <div class="cta">
-            <p>Ready to take your startup to the next level? Get started with our pro bono IaC onboarding today!</p>
-            <p><a href="mailto:your-email@example.com">Contact Us</a></p>
+        <div class="header">
+            <h1>Empower Your Startup with Infrastructure as Code – Free Onboarding!</h1>
+        </div>
+        <div class="content">
+            <p>Transform Your Infrastructure for Growth and Scalability</p>
+            <ul>
+                <li>🚀 <span>Free Consultation: Understand your current infrastructure and pain points.</span></li>
+                <li>📈 <span>Tailored Plan: Customized IaC implementation plan for your needs.</span></li>
+                <li>👩‍💻 <span>Hands-On Sessions: Practical guidance to set up your infrastructure.</span></li>
+                <li>📚 <span>Comprehensive Resources: Documentation and ongoing support.</span></li>
+            </ul>
+            <a href="mailto:your-email@example.com" class="cta">Get Started with Our Pro Bono IaC Onboarding Today!</a>
+        </div>
+        <div class="footer">
+            <p>Contact us at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
         </div>
     </div>
 </body>
