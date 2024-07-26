@@ -24,6 +24,31 @@
             max-width: 800px;
             width: 90%;
             text-align: left;
+            position: relative;
+        }
+        .window-controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            display: flex;
+            gap: 5px;
+        }
+        .window-controls div {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .close-btn {
+            background-color: #FF605C;
+        }
+        .minimize-btn {
+            background-color: #FFBD44;
+        }
+        .maximize-btn {
+            background-color: #00CA4E;
+        }
+        .header {
+            margin: 10px 0 0 0;
         }
         .header h1, .content p, .footer p {
             margin: 0 0 20px;
@@ -88,6 +113,11 @@
 </head>
 <body>
     <div class="container">
+        <div class="window-controls">
+            <div class="close-btn"></div>
+            <div class="minimize-btn"></div>
+            <div class="maximize-btn"></div>
+        </div>
         <div class="header">
             <h1>Empower Your Startup with Infrastructure as Code – Free Onboarding!</h1>
         </div>
@@ -105,7 +135,7 @@
             <p>Lets talk: <a href="mailto:milla@heoi.io">milla@heoi.io</a></p>
         </div>
         <div>
-           [~]$: <div class="cursor"></div>
+           [welcome@heoi ~]$ <div class="cursor"></div>
         </div>
     </div>
 </body>
