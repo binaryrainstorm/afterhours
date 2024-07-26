@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Bono IaC Onboarding | heoi</title>
+    <title>Pro Bono IaC Onboarding</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -58,12 +58,31 @@
         .cta:hover {
             background: #00CC00;
         }
+        .footer {
+            padding: 10px;
+        }
         .footer a {
             color: #00FF00;
             text-decoration: none;
         }
         .footer a:hover {
             text-decoration: underline;
+        }
+        .cursor {
+            display: inline-block;
+            width: 1px;
+            height: 20px;
+            background-color: #00FF00;
+            animation: blink 1s step-end infinite;
+            vertical-align: bottom;
+        }
+        @keyframes blink {
+            from, to {
+                background-color: transparent;
+            }
+            50% {
+                background-color: #00FF00;
+            }
         }
     </style>
 </head>
@@ -83,7 +102,10 @@
             <a href="mailto:milla@heoi.io" class="cta">Get Started with Our Pro Bono IaC Onboarding Today!</a>
         </div>
         <div class="footer">
-            <p>Contact Milla at: <a href="mailto:milla@heoi.io">milla@heoi.io</a></p>
+            <p>Lets talk: <a href="mailto:milla@heoi.io">milla@heoi.io</a></p>
+        </div>
+        <div>
+           [~]$: <div class="cursor"></div>
         </div>
     </div>
 </body>
